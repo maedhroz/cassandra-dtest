@@ -493,7 +493,7 @@ class ReplicaSideFiltering(Tester):
         self._assert_one("SELECT COUNT(*) FROM t WHERE v = 'new'", row=[2])
 
 
-@since('3.0.21')
+@since('3.0.19')
 class TestSecondaryIndexes(ReplicaSideFiltering):
     """
     @jira_ticket CASSANDRA-8272
@@ -505,7 +505,7 @@ class TestSecondaryIndexes(ReplicaSideFiltering):
         return True
 
 
-@since('3.0.21')
+@since('3.0.19')
 class TestAllowFiltering(ReplicaSideFiltering):
     """
     @jira_ticket CASSANDRA-8273
